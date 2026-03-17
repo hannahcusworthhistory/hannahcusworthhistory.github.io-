@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hannah Cusworth History</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <style>
+    /* ─── Font ─────────────────────────────────────────────── */
+    @font-face {
+      font-family: 'Piloti';
+      src: url('Piloti-Regular.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* ─── Colour Tokens ─────────────────────────────────────── */
+    :root {
+      --navy:       #1b2a4a;
+      --navy-light: #2c3f6a;
+      --pink:       #f4a7b9;
+      --pink-light: #fce4ec;
+      --beige:      #f5f0e8;
+      --beige-dark: #e8dfd0;
+      --white:      #ffffff;
+      --text-dark:  #1b2a4a;
+      --text-mid:   #3d3d3d;
+    }
+
+    /* ─── Reset & Base ──────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      background-color: var(--beige);
+      color: var(--text-dark);
+      font-size: 18px;
+      line-height: 1.75;
+    }
+
+    h1, h2, h3, h4, .logo {
+      font-family: 'Piloti', 'Cormorant Garamond', Georgia, serif;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ─── Navigation ────────────────────────────────────────── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2.5rem;
+      height: 68px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      color: var(--beige);
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+
+    .logo span {
+      display: block;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      color: var(--pink);
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: 'Piloti', serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--beige);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--pink); }
+
+    /* ─── Hero ──────────────────────────────────────────────── */
+    #hero {
+      background-color: var(--navy);
+      color: var(--beige);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      padding: 6rem 2.5rem;
+      min-height: 90vh;
+    }
+
+    .hero-text { max-width: 520px; }
+
+    .hero-text h1 {
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+      color: var(--beige);
+    }
+
+    .hero-text h1 em {
+      color: var(--pink);
+      font-style: normal;
+    }
+
+    .hero-text p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: var(--beige-dark);
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      border: 2px solid var(--pink);
+      color: var(--pink);
+      font-family: 'Piloti', serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      transition: background 0.2s, color 0.2s;
+      border-radius: 2px;
+    }
+
+    .btn:hover {
+      background-color: var(--pink);
+      color: var(--navy);
+    }
+
+    .hero-image {
+      flex-shrink: 0;
+      width: 300px;
+      height: 360px;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 4px solid var(--pink);
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    /* ─── Section Wrapper ───────────────────────────────────── */
+    section {
+      padding: 5rem 2.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-full {
+      max-width: 100%;
+      padding: 5rem 0;
+    }
+
+    .section-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2.5rem;
+    }
+
+    /* ─── Section Headings ──────────────────────────────────── */
+    .section-heading {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      color: var(--navy);
+      margin-bottom: 0.4rem;
+      letter-spacing: 0.02em;
+    }
+
+    .section-divider {
+      width: 60px;
+      height: 3px;
+      background-color: var(--pink);
+      margin-bottom: 2.5rem;
+    }
+
+    /* ─── About ─────────────────────────────────────────────── */
+    #about {
+      background-color: var(--beige);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
+    .about-grid p {
+      color: var(--text-mid);
+      margin-bottom: 1rem;
+    }
+
+    .about-image-slot {
+      background-color: var(--beige-dark);
+      border: 2px dashed var(--navy-light);
+      border-radius: 4px;
+      height: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--navy-light);
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .about-image-slot .slot-icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.75rem;
+      opacity: 0.4;
+    }
+
+    /* ─── Alternate Band ─────────────────────────────────────── */
+    .band-pink { background-color: var(--pink-light); }
+    .band-navy { background-color: var(--navy); color: var(--beige); }
+    .band-beige { background-color: var(--beige); }
+    .band-beige-dark { background-color: var(--beige-dark); }
+
+    /* ─── Curatorial ─────────────────────────────────────────── */
+    #curatorial .section-heading { color: var(--navy); }
+
+    .curatorial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .curatorial-card {
+      background-color: var(--white);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(27,42,74,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .curatorial-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 28px rgba(27,42,74,0.14);
+    }
+
+    .card-image-slot {
+      background-color: var(--beige-dark);
+      border-bottom: 2px dashed var(--navy-light);
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--navy-light);
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .card-image-slot .slot-icon { font-size: 2rem; opacity: 0.4; margin-bottom: 0.5rem; }
+
+    .card-body { padding: 1.4rem; }
+
+    .card-body h3 {
+      font-size: 1.15rem;
+      color: var(--navy);
+      margin-bottom: 0.3rem;
+    }
+
+    .card-body .card-meta {
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--pink);
+      margin-bottom: 0.6rem;
+      font-family: 'Piloti', serif;
+    }
+
+    .card-body p { font-size: 0.95rem; color: var(--text-mid); }
+
+    /* ─── Doctoral Work ──────────────────────────────────────── */
+    #doctoral {
+      background-color: var(--navy);
+      color: var(--beige);
+    }
+
+    #doctoral .section-heading { color: var(--beige); }
+    #doctoral .section-divider { background-color: var(--pink); }
+
+    .doctoral-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
+    .doctoral-layout p { color: var(--beige-dark); margin-bottom: 1rem; }
+
+    .doctoral-layout h3 {
+      font-size: 1.3rem;
+      color: var(--pink);
+      margin-bottom: 0.75rem;
+    }
+
+    .doctoral-image-slot {
+      background-color: var(--navy-light);
+      border: 2px dashed var(--pink);
+      border-radius: 4px;
+      height: 380px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--beige-dark);
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .doctoral-image-slot .slot-icon { font-size: 2.5rem; opacity: 0.4; margin-bottom: 0.75rem; }
+
+    /* ─── Writing ────────────────────────────────────────────── */
+    #writing { background-color: var(--beige-dark); }
+
+    .writing-list { list-style: none; }
+
+    .writing-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.5rem;
+      padding: 1.75rem 0;
+      border-bottom: 1px solid var(--beige);
+      align-items: start;
+    }
+
+    .writing-item:last-child { border-bottom: none; }
+
+    .writing-year {
+      font-family: 'Piloti', serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      color: var(--pink);
+      text-transform: uppercase;
+      padding-top: 0.2rem;
+      min-width: 60px;
+    }
+
+    .writing-item h3 {
+      font-size: 1.15rem;
+      color: var(--navy);
+      margin-bottom: 0.25rem;
+    }
+
+    .writing-item p { font-size: 0.95rem; color: var(--text-mid); }
+
+    .writing-tag {
+      display: inline-block;
+      background-color: var(--pink-light);
+      color: var(--navy);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-family: 'Piloti', serif;
+      padding: 0.2rem 0.6rem;
+      border-radius: 2px;
+      margin-top: 0.4rem;
+    }
+
+    /* ─── Media ──────────────────────────────────────────────── */
+    #media { background-color: var(--beige); }
+
+    .media-section-title {
+      font-family: 'Piloti', serif;
+      font-size: 1rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--pink);
+      margin-bottom: 1.25rem;
+      margin-top: 2.5rem;
+    }
+
+    .media-section-title:first-of-type { margin-top: 0; }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .embed-slot {
+      background-color: var(--beige-dark);
+      border: 2px dashed var(--navy-light);
+      border-radius: 4px;
+      aspect-ratio: 16 / 9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--navy-light);
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .embed-slot .slot-icon { font-size: 2.2rem; opacity: 0.4; margin-bottom: 0.5rem; }
+
+    /* Actual YouTube embeds */
+    .video-embed-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 4px;
+      box-shadow: 0 2px 16px rgba(27,42,74,0.1);
+    }
+
+    .video-embed-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+
+    .podcast-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.75rem;
+    }
+
+    .podcast-slot {
+      background-color: var(--beige-dark);
+      border: 2px dashed var(--navy-light);
+      border-radius: 4px;
+      height: 152px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--navy-light);
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .podcast-slot .slot-icon { font-size: 2rem; opacity: 0.4; margin-bottom: 0.5rem; }
+
+    /* ─── Contact ────────────────────────────────────────────── */
+    #contact {
+      background-color: var(--navy);
+      color: var(--beige);
+    }
+
+    #contact .section-heading { color: var(--beige); }
+    #contact .section-divider { background-color: var(--pink); }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-info p {
+      color: var(--beige-dark);
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    .contact-info .contact-detail {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--pink);
+      font-size: 0.95rem;
+      margin-bottom: 0.6rem;
+    }
+
+    /* Form */
+    .contact-form { display: flex; flex-direction: column; gap: 1.2rem; }
+
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+
+    .form-group label {
+      font-family: 'Piloti', serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--pink);
+    }
+
+    .form-group input,
+    .form-group textarea {
+      background-color: var(--navy-light);
+      border: 1px solid rgba(244,167,185,0.3);
+      border-radius: 2px;
+      padding: 0.75rem 1rem;
+      color: var(--beige);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+      width: 100%;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: rgba(245,240,232,0.4); }
+
+    .form-group input:focus,
+    .form-group textarea:focus { border-color: var(--pink); }
+
+    .form-group textarea { resize: vertical; min-height: 130px; }
+
+    .btn-submit {
+      display: inline-block;
+      padding: 0.85rem 2.5rem;
+      background-color: var(--pink);
+      color: var(--navy);
+      font-family: 'Piloti', serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background 0.2s, opacity 0.2s;
+      align-self: flex-start;
+    }
+
+    .btn-submit:hover { opacity: 0.85; }
+
+    /* ─── Footer ─────────────────────────────────────────────── */
+    footer {
+      background-color: #111d35;
+      color: rgba(245,240,232,0.5);
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+    }
+
+    footer span { color: var(--pink); }
+
+    /* ─── Responsive ─────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      #hero { flex-direction: column; text-align: center; gap: 2.5rem; padding: 4rem 1.5rem; }
+      .hero-image { width: 220px; height: 270px; }
+      .about-grid,
+      .doctoral-layout,
+      .contact-layout { grid-template-columns: 1fr; }
+      .curatorial-grid { grid-template-columns: 1fr 1fr; }
+      .video-grid,
+      .podcast-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 0 1rem; }
+      .nav-links { gap: 1rem; }
+      .nav-links a { font-size: 0.72rem; }
+      .curatorial-grid { grid-template-columns: 1fr; }
+      section { padding: 3.5rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════════════════ -->
+  <nav>
+    <div class="logo">
+      Hannah Cusworth
+      <span>History</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#curatorial">Curatorial</a></li>
+      <li><a href="#doctoral">Doctoral Work</a></li>
+      <li><a href="#writing">Writing</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════════════════ -->
+  <div id="hero">
+    <div class="hero-text">
+      <h1>Historian.<br/><em>Curator.</em><br/>Storyteller.</h1>
+      <p>
+        Working at the intersection of Atlantic World history, Black feminism,
+        and material culture — recovering lives, objects, and stories that
+        have been too long overlooked.
+      </p>
+      <a href="#about" class="btn">Discover My Work</a>
+    </div>
+    <div class="hero-image">
+      <img src="headshot.webp" alt="Hannah Cusworth" />
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════════════════════ -->
+  <section id="about">
+    <h2 class="section-heading">About</h2>
+    <div class="section-divider"></div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          <!-- REPLACE: Write a short introductory paragraph about yourself,
+               your background, and your academic/curatorial journey. -->
+          [Your introductory paragraph goes here. Describe your background,
+          training, and the broad arc of your intellectual and curatorial
+          interests.]
+        </p>
+        <p>
+          <!-- REPLACE: A second paragraph expanding on your areas of focus —
+               Atlantic World history, Black feminism, material culture, etc. -->
+          [Second paragraph: expand on your areas of specialism — the Atlantic
+          World, Black feminist methodologies, decorative arts and material
+          culture, and how these intersect in your practice.]
+        </p>
+        <p>
+          <!-- REPLACE: Affiliations, current position, or institutions. -->
+          [Third paragraph: current institutional affiliation, position, or
+          any relevant professional context you wish to share.]
+        </p>
+      </div>
+      <div class="about-image-slot">
+        <div class="slot-icon">🖼</div>
+        <strong>[ Image Placeholder ]</strong>
+        <p style="margin-top:0.5rem; font-size:0.82rem; opacity:0.7;">
+          Replace with your chosen image.<br/>
+          Recommended size: 600 × 800 px
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       CURATORIAL
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="section-full band-pink">
+    <div class="section-inner">
+      <section id="curatorial" style="padding:0; max-width:100%;">
+        <h2 class="section-heading">Curatorial</h2>
+        <div class="section-divider"></div>
+        <p style="max-width:680px; color:var(--text-mid); margin-bottom:2.5rem;">
+          <!-- REPLACE: A brief introduction to your curatorial practice. -->
+          [A short paragraph introducing your curatorial practice — the
+          institutions you have worked with, your approach to exhibition-making,
+          and the themes that animate your curatorial work.]
+        </p>
+        <div class="curatorial-grid">
+
+          <!-- CARD 1 -->
+          <div class="curatorial-card">
+            <div class="card-image-slot">
+              <div class="slot-icon">🖼</div>
+              <strong>[ Exhibition Image ]</strong>
+              <p style="font-size:0.75rem; margin-top:0.3rem; opacity:0.7;">Recommended: 600 × 400 px</p>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">Year · Institution</div>
+              <h3>[Exhibition or Project Title]</h3>
+              <p>[Brief description of the exhibition or curatorial project — its themes, scope, and your role.]</p>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="curatorial-card">
+            <div class="card-image-slot">
+              <div class="slot-icon">🖼</div>
+              <strong>[ Exhibition Image ]</strong>
+              <p style="font-size:0.75rem; margin-top:0.3rem; opacity:0.7;">Recommended: 600 × 400 px</p>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">Year · Institution</div>
+              <h3>[Exhibition or Project Title]</h3>
+              <p>[Brief description of the exhibition or curatorial project — its themes, scope, and your role.]</p>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="curatorial-card">
+            <div class="card-image-slot">
+              <div class="slot-icon">🖼</div>
+              <strong>[ Exhibition Image ]</strong>
+              <p style="font-size:0.75rem; margin-top:0.3rem; opacity:0.7;">Recommended: 600 × 400 px</p>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">Year · Institution</div>
+              <h3>[Exhibition or Project Title]</h3>
+              <p>[Brief description of the exhibition or curatorial project — its themes, scope, and your role.]</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       DOCTORAL WORK
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="section-full band-navy">
+    <div class="section-inner">
+      <section id="doctoral" style="padding:0; max-width:100%; background:none; color:var(--beige);">
+        <h2 class="section-heading" style="color:var(--beige);">Doctoral Work</h2>
+        <div class="section-divider"></div>
+        <div class="doctoral-layout">
+          <div>
+            <h3>[Thesis Title]</h3>
+            <p>
+              <!-- REPLACE: Thesis abstract or summary. -->
+              [A summary of your doctoral research — its central argument,
+              archival sources, geographical and temporal scope, and its
+              contribution to the fields of Atlantic history, Black feminist
+              historiography, and material culture studies.]
+            </p>
+            <p>
+              <!-- REPLACE: Supervisors, institution, funding, or awards. -->
+              [Additional context: institution, supervisors, funding body,
+              or any prizes and awards associated with the doctoral project.]
+            </p>
+            <p>
+              <!-- REPLACE: Current status or next steps (e.g. book manuscript). -->
+              [Current status of the project — e.g. thesis under examination,
+              being revised as a book manuscript, or forthcoming publication.]
+            </p>
+          </div>
+          <div class="doctoral-image-slot">
+            <div class="slot-icon">🖼</div>
+            <strong>[ Image Placeholder ]</strong>
+            <p style="margin-top:0.5rem; font-size:0.82rem; opacity:0.7;">
+              An archival image, object photograph, or map relevant to your research.<br/>
+              Recommended size: 700 × 600 px
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       WRITING
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="section-full band-beige-dark">
+    <div class="section-inner">
+      <section id="writing" style="padding:0; max-width:100%; background:none;">
+        <h2 class="section-heading">Writing</h2>
+        <div class="section-divider"></div>
+        <p style="max-width:680px; color:var(--text-mid); margin-bottom:2rem;">
+          <!-- REPLACE: Brief intro to your published and forthcoming writing. -->
+          [A short introduction to your writing — peer-reviewed articles,
+          book chapters, essays, public history pieces, and any forthcoming work.]
+        </p>
+        <ul class="writing-list">
+
+          <!-- WRITING ITEM 1 -->
+          <li class="writing-item">
+            <div class="writing-year">[Year]</div>
+            <div>
+              <h3>[Article or Chapter Title]</h3>
+              <p>[Journal name, edited volume, or publication. Brief description of the piece's argument or contribution.]</p>
+              <span class="writing-tag">[Category: e.g. Peer-Reviewed Article]</span>
+            </div>
+          </li>
+
+          <!-- WRITING ITEM 2 -->
+          <li class="writing-item">
+            <div class="writing-year">[Year]</div>
+            <div>
+              <h3>[Article or Chapter Title]</h3>
+              <p>[Journal name, edited volume, or publication. Brief description of the piece's argument or contribution.]</p>
+              <span class="writing-tag">[Category: e.g. Book Chapter]</span>
+            </div>
+          </li>
+
+          <!-- WRITING ITEM 3 -->
+          <li class="writing-item">
+            <div class="writing-year">[Year]</div>
+            <div>
+              <h3>[Article or Chapter Title]</h3>
+              <p>[Journal name, edited volume, or publication. Brief description of the piece's argument or contribution.]</p>
+              <span class="writing-tag">[Category: e.g. Public History Essay]</span>
+            </div>
+          </li>
+
+          <!-- WRITING ITEM 4 -->
+          <li class="writing-item">
+            <div class="writing-year">[Year]</div>
+            <div>
+              <h3>[Article or Chapter Title]</h3>
+              <p>[Journal name, edited volume, or publication. Brief description of the piece's argument or contribution.]</p>
+              <span class="writing-tag">[Category: e.g. Forthcoming]</span>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       MEDIA
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="section-full band-beige">
+    <div class="section-inner">
+      <section id="media" style="padding:0; max-width:100%; background:none;">
+        <h2 class="section-heading">Media</h2>
+        <div class="section-divider"></div>
+        <p style="max-width:680px; color:var(--text-mid); margin-bottom:2rem;">
+          <!-- REPLACE: Brief intro to your media appearances. -->
+          [A short introduction to your media presence — talks, interviews,
+          podcast appearances, and other public-facing engagements.]
+        </p>
+
+        <!-- ── YouTube Videos ── -->
+        <div class="media-section-title">Video</div>
+        <div class="video-grid">
+
+          <!--
+            TO ADD A YOUTUBE VIDEO:
+            Replace the entire <div class="embed-slot"> block below with:
+
+            <div class="video-embed-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                title="Video title"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            Replace YOUR_VIDEO_ID with the ID from your YouTube URL.
+          -->
+
+          <div class="embed-slot">
+            <div class="slot-icon">▶</div>
+            <strong>[ YouTube Video Placeholder ]</strong>
+            <p style="margin-top:0.4rem; font-size:0.78rem; opacity:0.7;">
+              Replace with your YouTube embed code.<br/>See comment in HTML for instructions.
+            </p>
+          </div>
+
+          <div class="embed-slot">
+            <div class="slot-icon">▶</div>
+            <strong>[ YouTube Video Placeholder ]</strong>
+            <p style="margin-top:0.4rem; font-size:0.78rem; opacity:0.7;">
+              Replace with your YouTube embed code.<br/>See comment in HTML for instructions.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- ── Podcasts ── -->
+        <div class="media-section-title" style="margin-top:3rem;">Podcasts</div>
+        <div class="podcast-grid">
+
+          <!--
+            TO ADD A PODCAST:
+            Replace the entire <div class="podcast-slot"> block below with
+            the embed code provided by your podcast platform
+            (Spotify, Apple Podcasts, Buzzsprout, Anchor, etc.).
+            Most platforms provide an <iframe> embed snippet.
+          -->
+
+          <div class="podcast-slot">
+            <div class="slot-icon">🎙</div>
+            <strong>[ Podcast Embed Placeholder ]</strong>
+            <p style="margin-top:0.4rem; font-size:0.78rem; opacity:0.7;">
+              Paste your podcast platform's embed code here.
+            </p>
+          </div>
+
+          <div class="podcast-slot">
+            <div class="slot-icon">🎙</div>
+            <strong>[ Podcast Embed Placeholder ]</strong>
+            <p style="margin-top:0.4rem; font-size:0.78rem; opacity:0.7;">
+              Paste your podcast platform's embed code here.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="section-full band-navy">
+    <div class="section-inner">
+      <section id="contact" style="padding:0; max-width:100%; background:none; color:var(--beige);">
+        <h2 class="section-heading" style="color:var(--beige);">Contact</h2>
+        <div class="section-divider"></div>
+        <div class="contact-layout">
+
+          <div class="contact-info">
+            <p>
+              Whether you are interested in collaborating on an exhibition,
+              commissioning a piece of writing, inviting me to speak, or simply
+              wish to get in touch, I would love to hear from you.
+            </p>
+            <div class="contact-detail">
+              ✉ &nbsp;
+              <!-- REPLACE: your Gmail address -->
+              <a href="mailto:your.email@gmail.com" style="color:var(--pink);">your.email@gmail.com</a>
+            </div>
+          </div>
+
+          <!--
+            CONTACT FORM — mailto
+            When the user clicks "Send Message", their default email client
+            (including Gmail in a browser) will open with the fields pre-filled.
+            Replace YOUR_EMAIL_HERE with your actual Gmail address.
+          -->
+          <form class="contact-form" id="contactForm" onsubmit="sendMail(event)">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Collaboration enquiry" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Your message here…" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════════ -->
+  <footer>
+    &copy; <span id="year"></span> Hannah Cusworth History. All rights reserved.
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════════════════════════ -->
+  <script>
+    // Auto-update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mailto contact form
+    function sendMail(e) {
+      e.preventDefault();
+      const name    = document.getElementById('name').value.trim();
+      const email   = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim() || 'Portfolio Enquiry';
+      const message = document.getElementById('message').value.trim();
+
+      // ── REPLACE the address below with your Gmail address ──
+      const recipient = 'your.email@gmail.com';
+
+      const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+      const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+    }
+  </script>
+
+</body>
+</html>
